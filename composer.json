@@ -1,0 +1,20 @@
+{
+    "name": "veedok/php2betta-test",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Veedok\\Php2bettaTest\\": "src/",
+            "MyPath\\": "/testDir",
+            "GeekBrains\\LevelTwo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Veedok",
+            "email": "konakov88@gmail.com"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.19"
+    }
+}
