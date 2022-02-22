@@ -1,6 +1,6 @@
 <?php 
 
-namespace Post;
+namespace Veedok\Php2bettaTest;
 class Post {
     public function __construct(
         private int $id,

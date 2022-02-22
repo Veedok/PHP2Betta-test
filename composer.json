@@ -4,8 +4,7 @@
     "autoload": {
         "psr-4": {
             "Veedok\\Php2bettaTest\\": "src/",
-            "MyPath\\": "/testDir",
-            "GeekBrains\\LevelTwo\\": "src/"
+            "mylib\\mypackage\\" : "mylib/mypackage"
         }
     },
     "authors": [
@@ -16,5 +15,8 @@
     ],
     "require": {
         "fakerphp/faker": "^1.19"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.6"
     }
 }
