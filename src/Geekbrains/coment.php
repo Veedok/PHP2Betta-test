@@ -1,5 +1,5 @@
 <?php 
-namespace Php2bettaTest;
+namespace coment;
 class Coment {
     public function __construct(
         private int $id,

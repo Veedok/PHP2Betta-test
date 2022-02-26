@@ -1,6 +1,6 @@
 <?php 
 
-namespace Php2bettaTest;
+namespace Post;
 class Post {
     public function __construct(
         private int $id,
@@ -11,6 +11,6 @@ class Post {
     {}
     public function __toString()
     {
-        return $this->title ." " . $this->description . " " . "Автор: " . $this->idAvthor;
+        return $this->title . $this->description . "Автор: " . $this->idAvthor;
     }
 }
