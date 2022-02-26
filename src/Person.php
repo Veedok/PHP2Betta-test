@@ -1,6 +1,6 @@
 <?php
 
-namespace Veedok\Php2bettaTest;
+namespace Php2bettaTest;
 
 class Person
 {

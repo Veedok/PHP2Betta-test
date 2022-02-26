@@ -5,10 +5,7 @@ use src\my\Class\Name;
 
 spl_autoload_register(function ($class) {
     
-    $file = str_replace('\\', DIRECTORY_SEPARATOR, $class);
-    
-    $file = str_replace('_', DIRECTORY_SEPARATOR, $file) . '.php';
-    
+    $file = sprintf("%s.php", str_replace(['_', ''], DIRECTORY_SEPARATOR, $class));
     if (file_exists($file)) {
         require $file;
     }

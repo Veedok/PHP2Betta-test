@@ -2,9 +2,9 @@
 
 
 use Faker\Factory;
-use Veedok\Php2bettaTest\Coment;
-use Veedok\Php2bettaTest\Person;
-use Veedok\Php2bettaTest\Post;
+use Php2bettaTest\Coment;
+use Php2bettaTest\Person;
+use Php2bettaTest\Post;
 
 require_once 'vendor/autoload.php';
 
