@@ -1,6 +1,6 @@
 <?php
 
-namespace Veedok\Php2bettaTest;
+namespace GeekBrains\LevelTwo;
 
 class Person
 {
@@ -15,6 +15,6 @@ class Person
 
     public function __toString()
     {
-        return 'Этого пользователя зовут: ' . $this->name . '. Его фамилия: ' . $this->surname . '. ID = ' . $this->id;
+        return 'Этого пользователя зовут:' . $this->name . '. Его фамилия:' . $this->surname . '. ID = ' . $this->id;
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+
 use Faker\Factory;
 use Veedok\Php2bettaTest\Coment;
 use Veedok\Php2bettaTest\Person;
@@ -9,8 +10,7 @@ require_once 'vendor/autoload.php';
 
 $faker = Factory::create();
 switch ($argv[1]) {
-    case 'user':
-        require_once 'vendor/composer/autoload_psr4.php';              
+    case 'user':              
         $user = new Person($faker->name(), $faker->firstName(), $faker->lastName());
         echo $user;
         break;

@@ -4,7 +4,8 @@
     "autoload": {
         "psr-4": {
             "Veedok\\Php2bettaTest\\": "src/",
-            "mylib\\mypackage\\" : "mylib/mypackage"
+            "mylib\\mypackage\\" : "mylib/mypackage",
+            "Doctrine\\Common\\ClassLoader\\" : "src/Doctrine/Test.php"
         }
     },
     "authors": [
