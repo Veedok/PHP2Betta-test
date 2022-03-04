@@ -20,7 +20,7 @@ $factory = new MakeFactory;
 //         break;
 // }
 echo match ($argv[1]) {
-    'user' => $factory->makeUser()->__toString(),
-    'post' => $factory->makePost()->__toString(),
-    'comment' => $factory->makeComent()->__toString(),
+    'user' => $factory->makeUser(),
+    'post' => $factory->makePost(),
+    'comment' => $factory->makeComent(),
 };
