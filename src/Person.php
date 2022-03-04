@@ -1,8 +1,8 @@
 <?php
 
-namespace Php2bettaTest;
+namespace App;
 
-class Person implements myString
+class Person implements MakeFactoryInterface
 {
 
     public function __construct(

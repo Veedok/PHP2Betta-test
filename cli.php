@@ -1,16 +1,10 @@
 <?php
 
-
-use Faker\Factory;
-use Php2bettaTest\Coment;
-use Php2bettaTest\ConcreteCreator2;
-use Php2bettaTest\makeFactory;
-use Php2bettaTest\Person;
-use Php2bettaTest\Post;
+use App\MakeFactory;
 
 require_once 'vendor/autoload.php';
-$factory = new makeFactory;
-$faker = Factory::create();
+$factory = new MakeFactory;
+
 // switch ($argv[1]) {
 //     case 'user':              
 //         $user = new Person($faker->name(), $faker->firstName(), $faker->lastName());
@@ -26,7 +20,7 @@ $faker = Factory::create();
 //         break;
 // }
 echo match ($argv[1]) {
-    'user' => $factory->makeUser($faker->name(), $faker->firstName(), $faker->lastName())->__toString(),
-    'post' => $factory->makePost($faker->numerify(), $faker->numerify(), $faker->sentence(), $faker->text(300))->__toString(),
-    'comment' => $factory->makeComent($faker->buildingNumber() , $faker->buildingNumber() , $faker->buildingNumber() , $faker->text(50))->__toString(),
+    'user' => $factory->makeUser()->__toString(),
+    'post' => $factory->makePost()->__toString(),
+    'comment' => $factory->makeComent()->__toString(),
 };

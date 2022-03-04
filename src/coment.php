@@ -1,6 +1,6 @@
 <?php 
-namespace Php2bettaTest;
-class Coment implements myString {
+namespace App;
+class Coment implements MakeFactoryInterface {
     public function __construct(
         private int $id,
         private int $idAuthor,

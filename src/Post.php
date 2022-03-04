@@ -1,7 +1,8 @@
 <?php 
 
-namespace Php2bettaTest;
-class Post implements myString {
+namespace App;
+
+class Post implements MakeFactoryInterface {
     public function __construct(
         private int $id,
         private int $idAvthor,
