@@ -2,7 +2,7 @@
 
 namespace Php2bettaTest;
 
-class Person
+class Person implements myString
 {
 
     public function __construct(

@@ -1,7 +1,7 @@
 <?php 
 
 namespace Php2bettaTest;
-class Post {
+class Post implements myString {
     public function __construct(
         private int $id,
         private int $idAvthor,

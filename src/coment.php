@@ -1,6 +1,6 @@
 <?php 
 namespace Php2bettaTest;
-class Coment {
+class Coment implements myString {
     public function __construct(
         private int $id,
         private int $idAuthor,
