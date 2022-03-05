@@ -11,5 +11,4 @@ spl_autoload_register(function ($class) {
     }
  });
 
-$test = new Test;
-$test2 = new Name;
+

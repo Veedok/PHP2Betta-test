@@ -1,6 +1,9 @@
 <?php 
-namespace App;
-class Coment implements MakeFactoryInterface {
+namespace App\Model;
+
+use App\Factory\MakeFactoryInterface;
+
+class Coment implements MakeFactoryInterface{
     public function __construct(
         private int $id,
         private int $idAuthor,

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "786a72fc04895083222bd72bbad03807",
+    "content-hash": "5432c2ec7403ecc653b364e887a96e05",
     "packages": [
         {
             "name": "fakerphp/faker",
@@ -2834,7 +2834,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-pdo_sqlite": "*"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.2.0"
 }

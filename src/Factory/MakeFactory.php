@@ -1,9 +1,11 @@
 <?php
 
-namespace App;
-
+namespace App\Factory;
+use App\Model\Coment;
+use App\Model\Person;
+use App\Model\Post;
 use Faker\Factory;
-use App\MakeFactoryInterface;
+
 
 class MakeFactory
 {

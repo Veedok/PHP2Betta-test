@@ -1,6 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Model;
+
+use App\Factory\MakeFactoryInterface;
 
 class Person implements MakeFactoryInterface
 {
