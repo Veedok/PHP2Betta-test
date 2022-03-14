@@ -3,7 +3,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Php2bettaTest\\": "src/",
+            "App\\": "src/",
             "mylib\\mypackage\\" : "mylib/mypackage",
             "Doctrine\\Common\\ClassLoader\\" : "src/Doctrine/Test.php"
         }
@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "fakerphp/faker": "^1.19"
+        "fakerphp/faker": "^1.19",
+        "ext-pdo_sqlite": "*"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6"
