@@ -15,6 +15,7 @@ class Coment implements MakeFactoryInterface{
     }
     public function __toString()
     {
-        return $this->idAuthor . 'Пишет: ' . $this->text . ' К посту: ' . $this->idPost;
+        return "INSERT INTO `php2bettatest`.`coment` (`idAuthor`, `idPost`, `text`) VALUES ('3', '2', '". $this->text ."');";
+
     }
 }

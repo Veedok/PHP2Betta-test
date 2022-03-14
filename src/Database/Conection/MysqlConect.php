@@ -6,14 +6,14 @@ namespace App\Database\Conection;
 class MysqlConect
 {
     public function __construct(
-        private  $host,
-        private $user,
-        private $pass,
-        private $db_name,
-        private $port,
+        private  $host = 'localhost',
+        private $user ='root',
+        private $pass = '',
+        private $db_name ='php2bettatest',
+        private $port= 3309,
     ) {
     }
-
+   
 
     private function getConect()
     {
@@ -38,6 +38,7 @@ class MysqlConect
             echo 'Не могу соединиться с БД. Код ошибки: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
             exit;
         } elseif ($this->getConect()) {
+            echo "allok";
             mysqli_query($this->getConect(), $string);
         }
     }

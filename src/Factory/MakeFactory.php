@@ -16,7 +16,7 @@ class MakeFactory
     }
     public function makeUser(): MakeFactoryInterface
     {
-        return new Person($this->faker->name(), $this->faker->firstName(), $this->faker->lastName());
+        return new Person($this->faker->name(), $this->faker->firstName(), $this->faker->lastName(), $this->faker->email());
     }
     public function makeComent(): MakeFactoryInterface
     {

@@ -14,6 +14,7 @@ class Post implements MakeFactoryInterface {
     {}
     public function __toString()
     {
-        return $this->title ." " . $this->description . " " . "Автор: " . $this->idAvthor;
+        return "INSERT INTO `php2bettatest`.`post` (`idAvthor`, `title`, `description`) VALUES ('5', '". $this->title ."', '". $this->description ."');";
+
     }
 }

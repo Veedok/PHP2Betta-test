@@ -8,15 +8,17 @@ class Person implements MakeFactoryInterface
 {
 
     public function __construct(
-        private string $id,
-        private string $name, 
-        private string $surname
+        public string $id,
+        public string $name, 
+        public string $surname,
+        public string $email
         )
     {
     }
 
     public function __toString()
     {
-        return 'Этого пользователя зовут: ' . $this->name . '. Его фамилия: ' . $this->surname . '. ID = ' . $this->id;
+        return "INSERT INTO `php2bettatest`.`users` (`name`, `surname`, `email`) VALUES ('". $this->name ."', '". $this->surname ."', '". $this->email ."');";
     }
+   
 }
